@@ -1,0 +1,18 @@
+{
+  "name": "frost-api",
+  "version": "1.0.0",
+  "description": "mobile version of network layer for frost fruster",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@frost.github.com:kumarafrostdigital/frost-api.git"
+  },
+  "author": "pradeep kumara",
+  "license": "ISC",
+  "dependencies": {
+    "refresh-fetch": "^0.6.2"
+  }
+}
