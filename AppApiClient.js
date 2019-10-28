@@ -1,6 +1,6 @@
 import { configureRefreshFetch } from 'refresh-fetch';
 
-export default class AppApiClient {
+class AppApiClient {
 	constructor(apiUrl, refreshToken, accessToken) {
 		this.baseUrl = apiUrl;
 		this.appApi = configureRefreshFetch({
@@ -75,3 +75,5 @@ const convertToQueryString = (object = {}) => {
 
 	return arr.join('&');
 };
+
+export { AppApiClient };
