@@ -1,6 +1,6 @@
 {
   "name": "frost-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "mobile version of network layer for frost fruster",
   "main": "./lib/index.js",
   "scripts": {
