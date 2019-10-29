@@ -9,7 +9,7 @@
     "lint": "eslint src test",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublishOnly": "npm run clean && npm run lint && npm test && npm run build",
-    "release": "np"
+    "release": "np --no-publish"
   },
   "repository": {
     "type": "git",
