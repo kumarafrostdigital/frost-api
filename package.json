@@ -2,17 +2,44 @@
   "name": "frost-api",
   "version": "1.0.0",
   "description": "mobile version of network layer for frost fruster",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
+    "build": "babel src --out-dir lib",
+    "clean": "rimraf lib dist coverage",
+    "lint": "eslint src test",
+    "prepublishOnly": "npm run clean && npm run lint && npm test && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git@frost.github.com:kumarafrostdigital/frost-api.git"
   },
+  "files": [
+    "lib"
+  ],
   "author": "pradeep kumara",
   "license": "ISC",
+  "homepage": "https://github.com/kumarafrostdigital/frost-api",
   "dependencies": {
     "refresh-fetch": "^0.6.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-flow": "^7.0.0",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.1.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-flowtype": "^3.12.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "flow-bin": "^0.104.0",
+    "jest": "^24.8.0",
+    "rimraf": "^2.6.3"
   }
 }
