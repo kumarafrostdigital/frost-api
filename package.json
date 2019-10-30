@@ -9,7 +9,7 @@
     "lint": "eslint src test",
     "test": "jest",
     "prepublishOnly": "npm run clean && npm run lint && npm test && npm run build",
-    "release": "np --no-publish"
+    "release": "np --no-publish --contents=lib"
   },
   "repository": {
     "type": "git",
